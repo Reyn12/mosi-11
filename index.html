@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Table</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="lcgForm">
+            <div class="form-group">
+                <h2 style="text-align: center;">LCG Parameters</h2>
+                <label for="aLCG">a :</label>
+                <input type="number" id="aLCG" name="aLCG" required>
+            </div>
+            <div class="form-group">
+                <label for="c">c :</label>
+                <input type="number" id="c" name="c" required>
+            </div>
+            <div class="form-group">
+                <label for="mLCG">m :</label>
+                <input type="number" id="mLCG" name="mLCG" required>
+            </div>
+
+            <h2 style="text-align: center;">Multiplicative Parameters</h2>
+            <div class="form-group">
+                <label for="aMulti">a :</label>
+                <input type="number" id="aMulti" name="aMulti" required>
+            </div>
+            <div class="form-group">
+                <label for="mMulti">m :</label>
+                <input type="number" id="mMulti" name="mMulti" required>
+            </div>
+
+            <div class="btnGenerate">
+                <button type="submit">Generate</button>
+            </div>
+        </form>
+
+        <div class="tableBungkus">
+            <table id="simulationTable">
+                <thead>
+                    <tr>
+                        <th rowspan="2">NO</th>
+                        <th colspan="3">Bilangan Acak Yang Dibangkitkan</th>
+                        <th colspan="6">Simulasi</th>
+                    </tr>
+                    <tr>
+                        <th>Waktu Antar Kedatangan Konsumen <br>(Menit)<br>(A) - Ui LCG Eksponensial</th>
+                        <th>Lama Penerimaan Pesanan <br>(Menit)<br>(B) - Ui Multiplikative Eksponensial</th>
+                        <th>Waktu Antara Kedatangan Telepon Pemesan <br>(Menit)<br>(C) - Eksponensial</th>
+                        <th>Kumulatif Kedatangan Pelanggan <br>(Menit)<br>(D) - Eksponensial</th>
+                        <th>Lama Penerimaan Telepon <br>(Menit)<br>(E) - Distribusi Eksponensial</th>
+                        <th>Lama Penyiapan Galon <br>(Menit)<br>(F) - Distribusi Eksponensial</th>
+                        <th>Waktu Selesai Dilayani <br>(Menit)<br>(G)</th>
+                        <th>Waktu Menunggu Konsumen Untuk Dilayani <br>(Menit)<br>(H)</th>
+                        <th>Waktu Menganggur Pelayan <br>(Menit)<br>(I)</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
